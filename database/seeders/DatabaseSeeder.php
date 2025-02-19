@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'owner'
         ]);
         \App\Models\User::factory()->create([
-            'username' => 'winzliu'
+            'username' => 'juxie'
         ]);
 
         \App\Models\Cashier::factory(1)->create();

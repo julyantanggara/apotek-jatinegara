@@ -40,6 +40,8 @@ Apotek Jati Negara adalah aplikasi apotek online yang memungkinkan pengguna untu
        #### Jalankan Perintah Berikut:
            cp .env.example .env
    - #### Konfigurasi file `.env`
+     - # Masukkan pengaturan untuk storage file .env
+             FILESYSTEM_DISK=public
      - Buka file `.env` dan konfigurasi pengaturan database, koneksi email, dan login google.
        ### Pengaturan database
        #### memungkinkan penggunaan akun database mysql yang berbeda saat login dengan user privilege yang berbeda:
@@ -105,10 +107,16 @@ Apotek Jati Negara adalah aplikasi apotek online yang memungkinkan pengguna untu
    - #### Jalankan Server Lokal
      #### jalankan perintah berikut:
          php artisan serve
+     #### lalu
+         php artisan storage:link
      #### dan
          npm run dev
    - #### Buka Proyek di Browser
       Buka browser dan kunjungi alamat yang ditampilkan di terminal. Biasanya, ini adalah `http://127.0.0.1:8000`.
+
+     #### NB:
+         Username: -cek dimysql-
+         Password: password
 
 # [Kontributor](#kontributor)
 - ### Alwin Liufandy
